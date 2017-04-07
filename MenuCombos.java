@@ -4,7 +4,7 @@ public class MenuCombos{
 	private int formadepago;
 	private String peticion;
 
-
+Datos Objeto1 = new Datos();
 
  public void CombosDesayuno(){
 
@@ -18,7 +18,7 @@ public class MenuCombos{
 
  	System.out.println("Dame el numero de combo que quieres");
 
- 	this.opcion=Datos.leerenteros();
+ 	this.opcion=Objeto1 .LeerNum();
 
  		switch(this.opcion){
 
@@ -26,11 +26,11 @@ public class MenuCombos{
 
  					System.out.println("Elgiste el combo Intercontinental");
  					System.out.println("Quiere poner un comentario en tu  orden (sin cebollas o algo) S/N");
- 					aux=Datos.leercadenas();
+ 					aux = Objeto1 .LeerCad();
  					if(aux.equals("s") || aux.equals("S")){
 
  					System.out.println("Escribe tus observaciones");
- 					this.peticion=Datos.leercadenas();
+ 					this.peticion = Objeto1 .LeerCad();
  					}
  					this.precio=50;
  					break;
