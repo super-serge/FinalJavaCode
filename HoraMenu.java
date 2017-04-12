@@ -11,7 +11,6 @@ public class HoraMenu{
 		public int ObtenerHora(){// metodos
 			Calendar calendario =new GregorianCalendar();
 			this.horadecomida=calendario.get(Calendar.HOUR_OF_DAY);
-			System.out.println(this.horadecomida);
 			return this.horadecomida;
 		}
 
