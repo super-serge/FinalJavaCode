@@ -1,8 +1,6 @@
-public class MenuCombos{
-	private int opcion;
-	private int precio;
+public class MenuCombos extends SeleccionComida{
 	private int formadepago;
-	private String peticion;
+	private String peticion;  // atributos
 
 Datos Objeto1 = new Datos();
 
@@ -20,9 +18,10 @@ Datos Objeto1 = new Datos();
 
  	this.opcion=Objeto1 .LeerNum();
 
- 		switch(this.opcion){
+ 		switch(this.opcion){																	//metodos
 
  				case 1:
+                         
 
  					System.out.println("Elgiste el combo Intercontinental");
  					System.out.println("Quiere poner un comentario en tu  orden (sin cebollas o algo) S/N");
@@ -32,7 +31,7 @@ Datos Objeto1 = new Datos();
  					System.out.println("Escribe tus observaciones");
  					this.peticion = Objeto1 .LeerCad();
  					}
- 					this.precio=50;
+ 					this.preciofinal=50;
  					break;
  		}
 

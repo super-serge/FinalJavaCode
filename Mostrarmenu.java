@@ -50,7 +50,7 @@ public class Mostrarmenu{
 	do{
   	this.hora=horaactual.ObtenerHora();
 
-  	  this.opcion=this.setOpcion(horaactual.VerificarHora(this.hora));
+  	  this.opcion=this.setOpcion(1);
 
 
   	   switch(this.opcion){

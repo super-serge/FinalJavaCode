@@ -1,12 +1,7 @@
 import java.io.*;
-
-
-public class ComidaMenu{
-	private int opcion;
-	private int platofuerte;
-	private int bebida;
-	private int postre;
-	public float preciofinal;
+public class ComidaMenu extends SeleccionComida{
+  
+	
 	Datos Objeto1 = new	Datos();
 
   public void ComidaMenu(){
@@ -32,7 +27,7 @@ public class ComidaMenu{
 
   		System.out.println ("Bienvenido al  Menu del Desayuno de bebida\n");
   		System.out.println ("Escogeras la opcion que mas te guste\n ");
-  		System.out.println (" 1.-Refresco\n 2.- Jugo de Naranja \n 3.-Sin bebida\n ");
+  		System.out.println (" 1.-Refresco\n 2.- Jugo de Naranja \n 3.-Sin bebida\n ");      /// metodos
   		System.out.println ("Recuerdad que cualquiera de las dos bebidas cuestan $10\n");
   		System.out.println ("Dame el numero de bebida que quisieras tener");
   		this.bebida = Objeto1.LeerNum();
