@@ -23,7 +23,7 @@ public class Mostrarmenu{
 		System.out.println("Deseas algun postres S/N");
 		aux=lector1.LeerCad();
 		if(aux.equals("S") || aux.equals("s") )
-			comida1.getMenuDesayuno_postre();
+			comida1.getMenuDesayuno_postre(); 	
 		System.out.println("Tu comida costara "+comida1.preciofinal);
 	}
 

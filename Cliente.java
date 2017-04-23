@@ -1,38 +1,37 @@
 import java.util.ArrayList;
-public class Cliente{
+public class Cliente {
+
 	protected String usuario;
 	protected String password;
 	protected String nombre;
 	protected Long telefono;
 	protected String email;
-	protected int contadorvisitas;
-	public static  ArrayList<Cliente> clientes= new ArrayList<Cliente>();
+	public static  ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 
-	Datos lector0=new Datos();
-	//ClienteNuevo registro = new ClienteNuevo();
-	
+	Datos lector0 = new Datos();
 	
 
-	public Cliente(){
+	public Cliente() {
 	}
 
-	public void mostrarMenu(){
-		System.out.println("1.-Registrarte\n 2 .-Inicia Sesion \n 3.-Salir");
+
+	public void mostrarMenu() {
+		System.out.println(" 1.-Registrarte\n 2 .-Inicia Sesion \n 3.-Salir");
 	}
 
-	public int getContadorVisitas(){
+	public int getContadorVisitas() {
 		return this.contadorvisitas;
 	}
 
-	public void setContadorVisitas(int contador_parametro){
+	public void setContadorVisitas(int contador_parametro) {
 		this.contadorvisitas=contador_parametro;
 	}
 
-	public String getUsuario(){
-		String aux="0";
+	public String getUsuario() {
+		String aux = "0";
 
 		System.out.print("Usuario:");
-		aux=lector0.LeerCad();
+		aux = lector0.LeerCad();
 
 		return aux;
 	}
@@ -49,13 +48,14 @@ public class Cliente{
 		return aux;
 	}*/
 
-	public void setUsuario(String usuario_parametro){
+	public void setUsuario(String usuario_parametro) {
 
 		this.usuario=usuario_parametro;
 
 
 	}
-	public String getPassword(){
+
+	public String getPassword() {
 		String aux="0";
 
 		System.out.print("Password:");
@@ -64,11 +64,11 @@ public class Cliente{
 
 	}
 
-	public void setPassword(String password_parametro){
+	public void setPassword(String password_parametro) {
 		this.password=password_parametro;
 		
 	}
-	public String getNombre(){
+	public String getNombre() {
 		String aux="0";
 
 		System.out.print("Nombre:");
@@ -77,7 +77,7 @@ public class Cliente{
 
 	}
 
-	public void setNombre(String nombre_parametro){
+	public void setNombre(String nombre_parametro) {
 		this.nombre=nombre_parametro;
 	}
 
@@ -151,9 +151,9 @@ public class Cliente{
 				System.out.println("Quieres volver a intentarlo (s/n)");
 				opcion=lector0.LeerCad();			
 			}
-			}while(verificador == 0 || opcion.equals("s"));
-			return a;
-		}
-
-
+		}while(verificador == 0 || opcion.equals("s"));
+		return a;
 	}
+
+
+}
