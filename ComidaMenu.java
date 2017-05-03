@@ -1,7 +1,7 @@
 import java.io.*;
 public class ComidaMenu extends SeleccionComida{
-  
-	
+    
+    
 	Datos Objeto1 = new	Datos();
 
   public void ComidaMenu(){
