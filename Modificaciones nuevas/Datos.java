@@ -47,7 +47,7 @@ public class Datos {
             } catch (IOException e) {
                 System.out.println("Numero Invalido");
             } catch (NumberFormatException e) {
-                System.out.println("Numero Invalido, no sea pendejo escribe numeros no letras idiota");
+                System.out.println("Numero Invalido, no escribas palabras");
 
             }
         }
@@ -71,7 +71,7 @@ public class Datos {
             } catch (IOException e) {
                 System.out.println("Numero Invalido");
             } catch (NumberFormatException e) {
-                System.out.println("Numero Invalido, no sea pendejo escribe numeros no letras idiota");
+                System.out.println("Numero Invalido, no escribas palabras");
 
             }
         }

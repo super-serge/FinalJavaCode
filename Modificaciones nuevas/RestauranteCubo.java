@@ -19,13 +19,12 @@ public class RestauranteCubo {
         Datos lector0 = new Datos();
 
         ClienteFrecuentes clientef = new ClienteFrecuentes();
-        
+
         Menu menu0 = new Menu();
-        
-        //menu0.ImprimirMenuDesayunos();
-        menu0.imprimirMenuComida();
-                
-                while (aux != 3) {
+
+        Orden orden = new Orden();
+
+        while (aux != 3) {
             System.out.println("\nBienvenido al Cubo");
 
             cliente0.mostrarMenu();
@@ -44,8 +43,7 @@ public class RestauranteCubo {
                     System.out.println("Bienvenido al Sistema de Login");
                     numero = clientef.getnumerodevisitas();
                     clientef.Comprobar(numero);
-                    menu0.ImprimirMenuDesayunos();
-                    
+                    orden.MostarAyuda();
 
                     break;
                 case 3:
@@ -58,7 +56,6 @@ public class RestauranteCubo {
             }
         }
 
-        //	horacomida.MostrarMenus();
     }
 
 }

@@ -86,7 +86,7 @@ public class Orden {
 
     public void SeleccionarBebida() {
 
-        System.out.println("Selecciona un numero de bebida");
+        System.out.println("\nSelecciona un numero de bebida");
         this.bebida = lector.LeerNum();
         this.tiempoPreparacion = this.tiempoPreparacion + 10;
         this.precio = precio + 15;
@@ -95,7 +95,7 @@ public class Orden {
 
     public void SeleccionarComida() {
 
-        System.out.println("Selecciona un numero de Comida");
+        System.out.println("\nSelecciona un numero de Comida");
         this.comida = lector.LeerNum();
         this.tiempoPreparacion = this.tiempoPreparacion + 15;
         this.precio = this.precio + 35;
@@ -104,7 +104,7 @@ public class Orden {
 
     public void SeleccionarPaquete() {
 
-        System.out.println("Selecciona un numero de Paquete");
+        System.out.println("\nSelecciona un numero de Paquete");
         this.paquete = lector.LeerNum();
         this.tiempoPreparacion = this.tiempoPreparacion + 30;
         this.precio = this.precio + 45;
@@ -115,8 +115,8 @@ public class Orden {
         int opcion;
         String aux;
 
-        System.out.println("1.-Seleccion por partes \n 2.-Seleccion por Paquetes");
-        System.out.println("Selcciona una opcion");
+        System.out.println(" 1.-Seleccion por partes \n 2.-Seleccion por Paquetes");
+        System.out.println("\nSelcciona una opcion\n");
         opcion = lector.LeerNum();
         Orden OrdenNueva = new Orden();
 
@@ -155,9 +155,11 @@ public class Orden {
     }
 
     public void MostarOrden(Orden NuevaOrden) {
-
-        System.out.println("El tiempo de preparacion es:" + NuevaOrden.tiempoPreparacion);
-        System.out.println("El Precio Total es:" + NuevaOrden.precio);
+        System.out.println("\n");
+        System.out.println("EL Numero de Orden es:"+NuevaOrden.numeroOrden);
+        System.out.println("El tiempo de preparacion es:" + NuevaOrden.tiempoPreparacion+"minutos");
+        System.out.println("El Precio Total es:$" + NuevaOrden.precio);
+        System.out.println("Comentarios: "+NuevaOrden.peticion);
         System.out.println("Pase a la caja para pagar");
 
     }
